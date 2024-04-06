@@ -22,7 +22,7 @@ Welcome to the Stock Data API! This API allows you to retrieve real-time stock d
 
 ### Installation
 
-To use the Awesome Stock Data API, follow these steps:
+To use the Stock Data API, follow these steps:
 
 1. Clone this repository to your local machine:
 
@@ -34,7 +34,23 @@ To use the Awesome Stock Data API, follow these steps:
 2. Install the required Python packages:
    
    ```bash
-   pip install -r requirements.txt
+      pip install -r requirements.txt
+   ```
+
+   2.1 Create a virtual environment (optional but recommended)
+   ```bash
+
+      python -m venv env
+
+   -  Activate the virtual environment
+   -  On Windows
+      env\Scripts\activate
+
+   - upgrade pip
+      py -m pip install --upgrade pip
+
+   - Install the required packages
+      pip install -r requirements.txt
    ```
 
 ### Usage
@@ -71,6 +87,29 @@ The response is a JSON object containing various data points such as:
 - "Variação (2024)": Year's percentage change.
 - "Variação (52 semanas)": Percentage change over the last 52 weeks.
 
+{
+  "Abertura": "60,28",
+  "Ativo Total": "R$ 455,98 B",
+  "D\u00edvida Bruta": "R$ 67,4 B",
+  "D\u00edvida L\u00edquida": "R$ 49,68 B",
+  "Ebitda": "R$ 86 B",
+  "Fechamento anterior": "60,37",
+  "Lucro L\u00edquido (LL)": "R$ 40,55 B",
+  "Margem Ebitda": "41.33%",
+  "Margem L\u00edquida": "19.48%",
+  "M\u00edn \u2014 M\u00e1x (Dia)": "59,61 - \n                                    60,48",
+  "Neg\u00f3cios": "39.589,00",
+  "Patrim\u00f4nio L\u00edquido (PL)": "R$ 198,32 B",
+  "Receita L\u00edquida": "R$ 208,06 B",
+  "Retorno sobre o Capital (ROIC)": "+17.55%",
+  "Retorno sobre o PL (ROE)": "+20.44%",
+  "Varia\u00e7\u00e3o (2024)": "-19.19%",
+  "Varia\u00e7\u00e3o (52 semanas)": "-14.2%",
+  "Varia\u00e7\u00e3o (Dia)": "-1.09%",
+  "Varia\u00e7\u00e3o (M\u00eas)": "-1.84%",
+  "Volume": "$ 918,34 M",
+  "\u00cdndice de pre\u00e7o sobre lucro (P/L)": "6,40"
+}
 
 ## Contributing
 
