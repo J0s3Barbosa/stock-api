@@ -1,5 +1,4 @@
 from flask import Flask, abort, jsonify
-import asyncio
 import aiohttp
 from bs4 import BeautifulSoup
 
